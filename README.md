@@ -1,3 +1,7 @@
 <h2>Foodies shop </h2>
 <h4>Foodie shop is online food order app </h4>
-<h5>In Foodie shop create using React, Redux, React Bootstrap,Bootstrap, React Router Dom, React Icons. </h5> 
+<h5>In Foodie shop create using React, Redux, React Bootstrap,Bootstrap, React Router Dom, React Icons. And also Mobile responsive website </h5> 
+
+
+<h3>Link :- </h3>
+https://relaxed-austin-06ff8b.netlify.app/
