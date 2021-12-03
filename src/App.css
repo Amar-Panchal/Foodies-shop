@@ -1,38 +1,531 @@
-.App {
-  text-align: center;
+body{
+    font-family:"Nexa Book" ;
+    background-color: #edf0f3;
+    padding: 0;
+    margin: 0;
+}
+.menuName
+.header .nav-link{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+@font-face{
+    font-family: "Raleway-Regular";
+    src:url(./components/fonts/Raleway-Regular.ttf)
+}
+@font-face{
+    font-family: "Raleway-Medium";
+    src:url(./components/fonts/Raleway-Medium.ttf)
+}
+@font-face{
+    font-family: "Raleway-Bold";
+    src:url(./components/fonts/Raleway-Bold.ttf)
+}
+@font-face{
+    font-family: "Raleway-Extrabold";
+    src:url(./components/fonts/Raleway-ExtraBold.ttf)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face{
+    font-family: "Raleway-SemiBold";
+    src:url(./components/fonts/Raleway-SemiBold.ttf)
+}
+@font-face{
+    font-family: "Raleway-Black";
+    src:url(./components/fonts/Raleway-Black.ttf)
+}
+.flex-1{
+    flex: 1;
+}
+.btn-navyblue{
+    background-color:#02052e;
+    color: white;
+    text-decoration: none ;
+    font-size: 0.8rem;
+    font-family: "Raleway-Medium";  
+    border-radius: 4px;
+    padding: 4px 10px 4px;
+    border: 1px solid #02052e;
+}
+.btn-navyblue:hover{
+    background-color: white;
+    color: #02052e ;
+    text-decoration: none;
+}
+.btn-white{
+    background-color:white;
+    color: #02052e;
+    text-decoration: none ;
+    font-size: 1rem;
+    font-family: "Raleway-Medium";
+    padding: 4px 10px 4px;
+    border-radius: 5px;
+    border: 3px solid #02052e;
+}
+.btn-white:hover{
+    background-color: #02052e;
+    color: white ;
+    text-decoration: none;
+    border: 3px solid white;
+}
+.btn-red{
+    background-color:rgb(192, 3, 3);
+    color: white;
+    text-decoration: none ;
+    font-size: 1rem;
+    font-family: "Raleway-Medium";  
+    border-radius: 4px;
+    padding: 3px 15px 3px;
+    border: 2px solid #02052e;
+}
+.btn-red:hover{
+    background-color: white;
+    color: rgb(192, 3, 3) ;
+    text-decoration: none;
+}
+.navyblue{
+    color: #02052e;
+}
+.navblue-color{
+    color: #02052e;
+    font-family: "Raleway-Bold";
+}
+.navblue-color:focus,.navblue-color:hover{
+    color: #f0c70f;
+}
+.modal-content{
+    background-color: #dfe1ee !important;
+    font-family: -apple-system;
+}
+.header{
+    background-color:rgba(247, 250, 253, 0.6) ;    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.HeaderName{
+    font-size: 1.5rem ;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: #02052e;
+}
+.HeaderName:hover,.HeaderName:focus{
+    color: #eb9532;
+}
+.sponIcon{ 
+    font-size: 1.9rem;
+    color:green !important;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.MenuIcon{
+    display: none;
+    color: #02052e;
+    background-color: white;
+    border: 5px solid #02052e;
+}
+.MenuIcon:hover{
+    color: white;
+}
+.CloseBtn{
+    background-color: #dfe1ee !important;
+    border: none ;
+    color: rgb(145, 7, 7);
+    font-size: 3rem;
+    padding: 0 !important;
+    line-height: 0 !important;
+    border: 2px solid red;
+}
+.CloseBtn:hover{
+    background-color: red !important;
+    color: white;
+}
+.carousel_item{
+    width: 100%;
+    height: 500px;
+}
+.carousel-control-next .visually-hidden,.carousel-control-prev .visually-hidden,.carousel-control-prev-icon,.carousel-control-next-icon,.carousel-indicators{
+    display: none;
+}
+.carousel-caption .posterTagline{
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 0 27px #02052e;
+    font-family: "Raleway-ExtraBold";
+    letter-spacing: 2px;
+}
+.carousel-caption .posterTagline span{
+    color: #eb9532;
+    text-shadow: 0 0 27px #02052e;
 }
 
-.App-link {
-  color: #61dafb;
+.section-heading{
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+}
+.section-heading:after{
+    content: '';
+    display: block;
+    background-image: url(./components/images/hr.svg);
+    width: 100%;
+    height: 20px;
+    background-position: center;
+    position: absolute;
+    bottom: -30px;
+    background-repeat: no-repeat;
+}
+.card{
+    transition: all 0.5s ease;
+    background-color: #edf0f3;
+    border-radius: 10px;
+    border-bottom: 10px solid #02052e;
+    position: relative;
+    width: 13rem !important;
+    height: 21rem !important;
+}
+.card:hover{
+    transform: scale(1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-title{
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #02052e;
+}
+.lead{
+    color: #02052e;
+    font-size: 1rem; 
+    font-weight: bolder;
+}
+.itemcategory{
+    color:#02052e;
+    background-color: white;
+    padding: 5px 30px 5px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border:1px solid #02052e;
+    font-size: 0.7rem;
+    font-family: "Raleway-Bold";
+    margin-bottom: 0.1rem !important;
+    position:absolute;
+}
+.card-img-top{
+    height: 12rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+}
+.itemcarousel{
+    position: relative;
+    display: none;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+}
+.slick-slider {
+    margin: 0 27px;
+}
+.slick-list {
+    margin: 0 27px;
+}
+.slick-track {
+padding: 1rem 0;
+}
+.section .slick-slider .slick-prev {
+    width: 30px;
+    top: 50%;
+    left: -2rem;
+    z-index: 0;
+    position: absolute;
+}
+.slick-slider .slick-next {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    right: -1rem;
+    z-index: 0;
+}
+.slick-prev:before {
+    content: "⏮️";
+    font-size: 30px;
+}
+.slick-next:before {
+content: "⏭️";
+font-size: 30px;
+}
+.slick-slider{
+    text-align: center;
+}
+
+.menu-card{
+    border: 2px solid #02052e;
+    width: 20rem;
+    height: 10rem;
+    margin:2rem;
+    border-bottom:10px solid #02052e;
+    border-radius: 10px;
+    background-color: #fafafa;
+    position: relative;
+}
+.menu-card:hover{
+    transform: scale();
+}
+.menu-card-img{
+    border-top-left-radius: 10px;
+    width: 10rem;
+    height: 9.3rem;
+    padding: 0;
+}
+.MenuNav{
+    font-size: 1.5rem;
+    font-family: "Raleway-Bold";
+    cursor: pointer;
+}
+.MenuNav:hover,.MenuNav:focus,.MenuNav:after{
+    color: #f0c70f;
+    text-decoration:3px #02052e underline !important;
+    text-underline-position: under;
+}
+
+.about-meal{ 
+     background-color: white;
+}
+.aboutImg{
+    width: 75%;
+}
+section.about-meal h2{
+    font-family: "Raleway-Bold";
+    font-size: 1.4rem;
+    color: #02052e;
+    margin-bottom: 1.6rem;
+    line-height: 1.2;
+}
+section.about-meal p{
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+.our-service{
+    background:linear-gradient(
+        rgba(57, 77, 109, 0.1), 
+        rgba(71, 91, 124, 0.1)
+    ),url(./components/images/food-table.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+section.our-service .service-card{
+    background-color:transparent;
+    border: 2px solid #02052e;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    color: #fff;
+    border-bottom:10px solid #02052e;
+}
+section.our-service .service-card:hover{
+    background-color: #d2d5e7;
+    color: #02052e;
+}
+section.our-service .service-card .icon{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.our-service .service-card h2{
+    margin-top: 2.2rem;
+    font-family: "Raleway-Bold";
+    font-size: 1.3rem;
+    margin-bottom: 1rem;    
+}
+section.our-service .service-card p{
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.StarIcons{
+    font-size: 1.4rem;
+}
+.customerName{
+    font-family: "Raleway-Bold";
+    font-size: 1.3rem;
+    padding-top: 1.5rem;
+}
+.ReviewParagraph{
+    font-family: "Raleway-Medium";
+    line-height: 1.7;   
+}
+.customeruserIcon{
+    font-size: 3rem;
+    padding: 5px 18px 23px; 
+    border-radius: 50%;   
+    background-color: #02052e;
+    color: white;
+    border:2px solid #02052e;
+}
+
+section.contact-us .map{
+    border: 2px solid #02052e;
+    height: 340px;
+}
+.contactInput{
+    width:20rem;
+    height: 2.5rem;
+    border: 1px solid #02052e;
+    border-radius: 4px;
+}
+.contact-us{
+    display: flex;
+}
+.contactTextarea{
+    width: 20rem;
+    height: 7rem;
+    border-radius: 4px;
+    border: 1px solid #02052e;
+}
+.contactpage{
+    background-color: white;
+}
+
+.footer{
+    display: flex;
+}
+footer .box{
+    flex: 1;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+footer .box ul{
+    list-style-type: none;
+}
+footer .box h3{
+    border-bottom: 1px solid #02052e;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+footer .box p{
+    line-height: 1.7;
+    font-family: "Raleway-Regular";
+}
+footer .box ul li{
+    margin-bottom: 1rem;
+}
+.box .contact-info .contactTitle{
+    font-size: 1rem;
+    font-family: "Raleway-Bold";
+    display: block;
+}
+.contact-info{
+    margin-top: -1.1rem;
+    text-align: start;
+    margin-left: 2rem;
+}
+footer.copyright{
+    padding: 1rem 0;
+    background-color: #0b104e;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+footer.copyright a{
+    color: #eb9532;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: "Raleway-Bold";
+}
+.socialAccount span{
+    font-size: 1.5rem;
+    margin:1rem;
+    cursor: pointer;
+}
+.menu-body{
+    display: flex;
+}
+.menuImg{
+    width: 10rem;
+    height: 10rem;
+}
+.menuName h1{
+    font-family: "Raleway-Extrabold";
+    font-size: 1.4rem;
+}
+.menuName p{
+    font-family: "Raleway-medium";
+}
+.cartbill{
+    background-color: #02052e;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cartbill:hover{
+    background-color:#0b104e;
+ 
+}
+.cartbill h3{
+    font-size: 1rem;
+}
+.totalPrice{
+    font-family: "Raleway-extrabold";
+    text-align: end;
+}
+.Mobileheader{
+    display: none !important;
+}
+.modal-button{
+    padding: 4px 10px 5px !important;
+    font-size: 1rem;
+}
+.service-card-join{
+    display: flex;
+}
+@media( max-width:770px){
+    .header{
+        display: none !important;
+    }
+    .Mobileheader{
+        display: flex !important;
+        background-color:rgba(247, 250, 253, 0.6) ;    
+    }
+    .service-card-join{
+        display: block;
+    }
+    .our-service{
+        height: max-content;
+    }
+    .section-heading{
+        font-size: 1.1rem;
+        margin: 1rem;
+    }
+    .contactInput{
+        width:18rem;
+        height: 2.5rem;
+    }
+    .contactTextarea{
+        width: 18rem;
+        height: 7rem;
+    }
+    .contact-us{
+        display: block;
+    }
+    .footer{
+        display: block;
+    }
+    .footer .box{
+        margin-bottom: 1rem;
+    }
+    .menu-body{
+        display: block;
+    }
+    .menuName{
+        margin-top: 1rem;
+    }
+}
+@media( max-width:1006px){
+    .contact-us{
+        display: block;
+    }
 }
