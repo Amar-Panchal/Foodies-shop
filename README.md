@@ -2,4 +2,4 @@
 
 
 <h3>Link :- </h3>
-https://lucid-snyder-39fc26.netlify.app/
+https://quirky-wescoff-25ee91.netlify.app/
